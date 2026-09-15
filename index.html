@@ -72,6 +72,8 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 25px;
+  width: min(1200px, 92%);
+  margin: auto;
 }
 
 .logo {
@@ -149,6 +151,7 @@ header {
     radial-gradient(circle at 75% 40%, #7c2e0e 0%, transparent 35%),
     linear-gradient(120deg, #210c04, #451706 55%, #170804);
   overflow: hidden;
+  width: 100%;
 }
 
 .hero-grid {
@@ -156,6 +159,9 @@ header {
   grid-template-columns: 38% 62%;
   align-items: center;
   min-height: 500px;
+  width: min(1400px, 100%);
+  margin: auto;
+  padding: 0 40px;
 }
 
 .hero-content {
@@ -510,6 +516,7 @@ footer {
   .hero-grid {
     grid-template-columns: 1fr;
     min-height: auto;
+    padding: 0 20px;
   }
 
   .hero-content {
@@ -580,7 +587,7 @@ footer {
 <body>
 
 <header>
-  <div class="container nav">
+  <div class="nav">
     <a href="#" class="logo">
       ipack
       <small>Complete Packaging Solution</small>
@@ -606,7 +613,7 @@ footer {
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <div class="container hero-grid">
+  <div class="hero-grid">
     <div class="hero-content">
       <div class="logo" style="font-size:38px">
         ipack
